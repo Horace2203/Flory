@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Pour Asflorid</title>
+<title>❤️😘À toi mon cœur🥰❤️</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Work+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
@@ -336,16 +336,119 @@
     outline: 2px solid var(--wine);
     outline-offset: 3px;
   }
+
+  /* Gate / login screen */
+.gate{
+  position: fixed;
+  inset:0;
+  z-index: 100;
+  background: var(--cream);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding: 1.5rem;
+  transition: opacity 0.7s ease, visibility 0.7s ease;
+}
+.gate.hidden{
+  opacity:0;
+  visibility:hidden;
+  pointer-events:none;
+}
+.gate-card{
+  max-width: 360px;
+  width:100%;
+  text-align:center;
+}
+.gate-card .kicker{ display:block; margin-bottom:0.5rem; }
+.gate-card h1{
+  font-size: clamp(2rem, 8vw, 2.6rem);
+  margin-bottom: 0.75rem;
+}
+.gate-card p.intro{
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  color: var(--plum);
+}
+.gate-card label{
+  display:block;
+  text-align:left;
+  font-family:'Fraunces', serif;
+  font-style:italic;
+  color: var(--wine);
+  margin-bottom: 0.4rem;
+  font-size: 0.95rem;
+}
+.gate-card input{
+  width:100%;
+  padding: 0.8rem 1rem;
+  font-family:'Work Sans', sans-serif;
+  font-size: 1rem;
+  border: 1px solid rgba(110,29,56,0.25);
+  border-radius: 6px;
+  background: #fff;
+  color: var(--plum);
+  margin-bottom: 1.1rem;
+}
+.gate-card input:focus{
+  outline:none;
+  border-color: var(--rose);
+}
+.gate-card button{
+  width:100%;
+  background: var(--rose);
+  color: var(--cream);
+  font-family:'Fraunces', serif;
+  font-size: 1.05rem;
+  padding: 0.85rem 1rem;
+  border-radius: 999px;
+  border:none;
+  cursor:pointer;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+.gate-card button:hover{
+  background: var(--wine);
+  transform: translateY(-2px);
+}
+.gate-error{
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: var(--rose);
+  min-height: 1.2em;
+}
+
+body.locked{
+  overflow:hidden;
+}
+body.locked .petals, body.locked main, body.locked > section{
+  display:none;
+}
 </style>
 </head>
-<body>
+<body class="locked">
+ <locked>
+    <body class="locked">
+
+<div class="gate" id="gate">
+  <div class="gate-card">
+    <span class="kicker">Avant d'entrer</span>
+    <h1 class="display">Pour toi seule</h1>
+    <p class="intro">Ce site t'est destiné. Entre ton prénom et le mot de passe pour continuer.</p>
+    <label for="gateName">Ton prénom</label>
+    <input type="text" id="gateName" placeholder="Ton prénom" autocomplete="off">
+    <label for="gatePassword">Mot de passe</label>
+    <input type="password" id="gatePassword" placeholder="••••••" autocomplete="off">
+    <button id="gateSubmit">Entrer</button>
+    <div class="gate-error" id="gateError"></div>
+  </div>
+</div>
+ </locked>  
 
 <div class="petals" id="petals"></div>
 
 <section class="hero">
-  <span class="eyebrow">Pour Asflorid</span>
-  <h1 class="display">Il fallait<br>que je te le dise.</h1>
-  <p class="sub">Un petit site, rien que pour toi — parce que certaines choses méritent mieux qu'un simple message.</p>
+  <span class="eyebrow">Rien que pour ma Flory.</span>
+  <h1 class="display">Même  si tu le sais fallait<br>que je te le dise.</h1>
+  <p class="sub">Un petit site, rien que pour toi — parce que certaines choses méritent mieux qu'un simple message bébé.</p>
   <div class="scroll-hint">↓ continue de lire ↓</div>
 </section>
 
@@ -358,22 +461,22 @@
 
 <section class="story reveal">
   <span class="kicker">Notre histoire</span>
-  <h2>Depuis la terminale</h2>
+  <h2>Depuis la termo</h2>
   <p>On s'est rencontrés à l'école, en terminale. Une année qui aurait pu n'être qu'une année comme les autres, remplie de cours et d'examens — et qui est devenue, sans que je m'y attende, l'année où je t'ai rencontrée.</p>
-  <p>Depuis, il y a quelque chose qui n'est jamais reparti.</p>
+  <p>Depuis, il y a quelque chose qui n'est jamais reparti, cet amour que je porte pour toi.</p>
 </section>
 
 <section class="qualities reveal">
-  <span class="kicker">Ce que j'apprécie chez toi</span>
-  <h2>Ta personnalité, avant tout</h2>
+  <span class="kicker">Ce que j'apprécie avant toute chose chez toi</span>
+  <h2>Ta personnalité, puis cet cœur aimable et précieuse que t'as.</h2>
   <ul>
     <li>
       <span class="mark">—</span>
-      <p>Ta façon d'être toi-même, sans jamais forcer, sans jamais te justifier.</p>
+      <p>Ta façon d'être toi-même, sans jamais forcer, sans jamais te justifier est l'une des choses que j'apprécie le plus chez toi.</p>
     </li>
     <li>
       <span class="mark">—</span>
-      <p>Une présence qui met à l'aise, qui donne envie de rester et d'écouter.</p>
+      <p>Une présence qui met à l'aise, qui donne envie de rester et d'écouter meme si tu n'fais parfois qu'à ta tete.</p>
     </li>
     <li>
       <span class="mark">—</span>
@@ -383,35 +486,65 @@
 </section>
 
 <section class="letter reveal">
-  <span class="kicker" style="color:#e0a8bb;">Ce que je voulais te dire</span>
+  <span class="kicker" style="color:#e0a8bb;">Ce que j'aimerais que tu saches,Chérie.</span>
   <h2>Asflorid,</h2>
+  <p>Tant bien de temps que je te l'ai pas avouer, d'abord j'aimerais que tu saches que tu es la première fille qui ma aimé dans ma vie et que j'ai le plus aimé en retour sans savoir la raion pour laquelle, excepté ma Reine (ma Mère). Je tenais d'abord à te remercier pour tout l'amour que tu ressentais pour moi au début et à m'excuser pour tout le temps que ça a pris pour que je le fasse en retour.</p>
   <p>Je n'ai jamais été doué pour dire les choses en face, alors j'ai préféré te les écrire ici, tranquillement, pour que tu puisses les lire à ton rythme, autant de fois que tu en as envie.</p>
   <p>Depuis la terminale, ta personnalité m'a marqué plus que je ne l'aurais imaginé. Ce n'est pas venu d'un coup, c'est venu petit à petit, à force de te voir être toi-même — et c'est resté. Je crois que c'est même devenu plus fort avec le temps, alors que la logique voudrait que ce genre de choses s'efface.</p>
-  <p>Il y a des gens qui traversent une salle de classe sans qu'on s'en souvienne. Et il y a toi. Ta façon d'être, ton naturel, cette assurance tranquille que tu as sans jamais chercher à en faire trop — j'ai tout de suite su que tu n'étais pas quelqu'un que j'allais simplement croiser.</p>
-  <p>Je ne t'écris pas ça sur un coup de tête. C'est une pensée qui est restée, qui a tenu, et qui n'a fait que grandir. Je n'attends pas de toi que tu ressentes exactement la même chose au même instant — je voulais juste arrêter de la garder pour moi.</p>
-  <p>Alors voilà, sans détour et sans rien retenir : je t'aime, Asflorid. Pas à moitié, pas "un peu" — pleinement, sincèrement, avec l'envie réelle de construire quelque chose avec toi si tu es prête à le tenter aussi.</p>
-  <p>Ce que je te propose, ce n'est pas un mot en l'air. C'est une place, si tu la veux : celle de quelqu'un qui a envie d'apprendre à te connaître encore mieux, d'être là dans les bons moments comme dans les moins bons, et de voir, jour après jour, ce que ça peut devenir entre nous.</p>
-  <div class="signature">— Horace</div>
+  <p>Il y a des gens qui traversent une salle de classe sans qu'on s'en souvienne. Et il y a toi, ma présente princesse, et la future Reine de mes enfants. Ta façon d'être tout toi, ton naturel, cette assurance tranquille que tu as sans jamais chercher à en faire trop — j'ai tout de suite su que tu n'étais pas quelqu'un que j'allais simplement croiser, mais une perle précieuse à garder, à entretenir et à jovialement contempler.</p>
+  <p>Je ne t'écris pas ça sur un coup de tête. C'est une pensée qui est resde tée, qui a tenu, et qui n'a fait que grandir. Je n'attends pas de toi que tu ressentes exactement la même chose juste par moment — je voulais que tu l'as ressentes à l'instant présent.</p>
+  <p>Alors voilà, sans détour et sans rien retenir : je reconnais t'avoir faiblement aimer par le passé et je prie Dieu de m'accorder cette grâce pour que je puisse fortement t'aimer dans l'avenir, mais présement je n'peux que te dire je t'aime de tout mon cœur, Flory. Pas à moitié, pas "un peu" — pleinement, sincèrement, avec l'envie réelle de construire quelque chose avec toi si Dieu nous le permet.</p>
+  <p>Ce que je te propose, ce n'est pas un mot en l'air. C'est cette place dans ton coeur que je tiens tant pour toi, et celle dans la mienne que tu tiens tant pour moi , si tu la veux : celle de quelqu'un qui a envie d'apprendre à te connaître encore mieux de jour en jour, d'être là dans les bons moments comme dans les moins bons, et de voir, jour après jour, ce que l'avenir nous réserves.</p>
+  <p>La distance a beau nous séparer sur la carte, douce princesse. Elle n'as rien changé à ce que je ressens-si ce n'est me faire réaliser à quel point ta présence me manque au quotidien. -Il y a des jours où je repense à la terminale, à ce moment où tout a commencé, et où je me dis que peu importe les kilomètres, ce qu'on construit vaut bien cette attente. -Tu es loin,et tu n'as jamais été aussi présente dans mes pensées, mon coeur. Chaque peti moment de la journée me ramène à toi-un souvenir, un sourire que j'imagine,une envie de t'entendre rire. -J'ai hâte au jou où la distance ne sera pljs qu'un souvenir, et où je pourrai enfin te prendre pour la toute première fois dans mes bras, t'embrasser et te le dire autrement qu'avec des mots. -D'ici là, sache que tu comptes plus que tu ne l'imagines, ma belle- tu es précieuse, et cette distance ne fait que rendre chaque pensée pour toi encore plus tendre.</p>
+  <div class="signature">—Ton Horace</div>
 </section>
 
 <section class="finale reveal">
   <h2>Alors, dis-moi.</h2>
   <p>Pas besoin d'un grand discours en retour.</p>
-  <button class="cta" id="askBtn">Dis-moi oui</button>
-  <div class="answer" id="answerText">Merci d'avoir lu jusqu'ici, Asflorid. 💛</div>
+  <button class="cta" id="askBtn">Dis-moi oui, c'est faisable </button>
+  <div class="answer" id="answerText">Merci d'avoir lu jusqu'ici, Chérie💛.</div>
 
   <div class="respond">
-    <label for="replyBox">Écris-lui ta réponse, si tu veux :</label>
+    <label for="replyBox">Écris-moi ta réponse, si tu veux :</label>
     <textarea id="replyBox" placeholder="Écris ce que tu ressens..."></textarea>
     <div class="send-row">
       <a href="#" id="sendWhatsapp" class="send-btn send-whatsapp">Envoyer sur WhatsApp</a>
       <a href="#" id="sendEmail" class="send-btn send-email">Envoyer par email</a>
     </div>
-    <div class="hint">Ça ouvrira WhatsApp ou ton application email, déjà prêt avec ton message pour Horace.</div>
+    <div class="hint">Ça ouvrira WhatsApp ou ton application email, déjà prêt avec ton message pour ton Trésor.</div>
   </div>
 </section>
 
 <script>
+  // Password gate
+const CORRECT_PASSWORD = 'trésor';
+const gate = document.getElementById('gate');
+const gateName = document.getElementById('gateName');
+const gatePassword = document.getElementById('gatePassword');
+const gateSubmit = document.getElementById('gateSubmit');
+const gateError = document.getElementById('gateError');
+
+function tryUnlock(){
+  const pwd = gatePassword.value.trim().toLowerCase();
+  if(pwd === CORRECT_PASSWORD){
+    gate.classList.add('hidden');
+    document.body.classList.remove('locked');
+    gateError.textContent = '';
+  } else {
+    gateError.textContent = "Ce n'est pas le bon mot de passe... essaie encore.";
+    gatePassword.value = '';
+    gatePassword.focus();
+  }
+}
+
+gateSubmit.addEventListener('click', tryUnlock);
+gatePassword.addEventListener('keydown', (e)=>{
+  if(e.key === 'Enter') tryUnlock();
+});
+gateName.addEventListener('keydown', (e)=>{
+  if(e.key === 'Enter') gatePassword.focus();
+});
   // Floating petals
   const petalContainer = document.getElementById('petals');
   const symbols = ['❀','✿','♡'];
