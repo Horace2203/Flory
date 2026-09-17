@@ -34,6 +34,31 @@
     color: var(--wine);
   }
 
+  /* Music toggle */
+  .music-toggle{
+    position: fixed;
+    bottom: 1.25rem;
+    right: 1.25rem;
+    z-index: 150;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: none;
+    background: var(--rose);
+    color: var(--cream);
+    font-size: 1.3rem;
+    cursor: pointer;
+    box-shadow: 0 8px 20px -8px rgba(110,29,56,0.6);
+    transition: transform 0.3s ease, background 0.3s ease;
+  }
+  .music-toggle:hover{
+    background: var(--wine);
+    transform: scale(1.08);
+  }
+  .music-toggle.muted{
+    background: rgba(110,29,56,0.35);
+  }
+
   /* Floating petals background */
   .petals{
     position:fixed;
@@ -564,8 +589,8 @@
 
 <div class="heart-cursor" id="heartCursor">♡</div>
 
-<audio id=""bgMusic" src="DADJU - Reine (Clip Officiel) - DADJU.mp3" loop preload="auto"></audio>
-<button id="musicToggle" class="music-toggle" arial label="Couper/activer"></button>
+<audio id="bgMusic" src="DADJU - Reine (Clip Officiel) - DADJU.mp3" loop preload="auto"></audio>
+<button id="musicToggle" class="music-toggle" aria-label="Couper/activer la musique">🔊</button>
 
 <div class="gate" id="gate">
   <div class="gate-card">
