@@ -833,18 +833,6 @@ musicToggle.addEventListener('click', ()=>{
   }, { threshold: 0.15 });
   reveals.forEach(r=>io.observe(r));
 
-  // Input and dowload picture or movie
-  document.getElementById("ajout").addEventListener("chage", e=> {
-    for (const f of e.target.files) {
-      cnst urll = URL.createObjectURL(f);
-      const el = f.type.startWith("video")
-      ? `<video src="${url}" controls width="250"></video>`
-      : `<img src="${url}" width="250">`;
-      document.getElementById{'galerie'}.insertAdjacentHtml('beforeend',
-      `<div>${el}<br><a href="${url}" dowload="${f.name}">⬇️ Télécharger⬇️</a></div>`);
-    }
-  });
-
   // CTA reveal
   const btn = document.getElementById('askBtn');
   const answer = document.getElementById('answerText');
